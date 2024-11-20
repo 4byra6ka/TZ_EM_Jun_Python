@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tz-em-jun-python"
+version = "0.1.0"
+description = ""
+authors = ["GAU <gau@1jz.ru>"]
+readme = "README.md"
+packages = [{include = "tz_em_jun_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
