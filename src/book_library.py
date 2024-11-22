@@ -53,7 +53,7 @@ class BookLibrary(BookLibraryABC):
         self.__library.append(book)
         return book
 
-    def del_book(self, _id: int) -> True|None:
+    def del_book(self, _id: int) -> Book|None:
         """
         Функция удаления из библиотеки книги
         :param _id: Уникальный идентификатор книги
@@ -62,7 +62,7 @@ class BookLibrary(BookLibraryABC):
         for book in self.__library:
             if book.get_id == _id:
                 self.__library.remove(book)
-                return True
+                return book
         else:
             return None
 

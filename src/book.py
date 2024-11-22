@@ -46,13 +46,6 @@ class Book:
         """
         self.__status = status
 
-    def __del__(self) -> None:
-        """
-        Магический метод del для вывода в консоль информации при удалении книги
-        """
-        print(f'Удалена книга ID:{self.__id}, Название книги:{self.__title}, Автор книги: {self.__author}'
-              f', Год издания: {self.__year}')
-
     @property
     def get_id(self) -> int:
         """

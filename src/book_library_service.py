@@ -38,7 +38,8 @@ class BookLibraryService:
             return None
         book = self.book_library.del_book(book_id)
         if book:
-            print('\n')
+            print(f'Удалена книга ID:{book.get_id}, Название книги:{book.title}, Автор книги: {book.author}'
+                  f', Год издания: {book.year}\n')
             self.write_library()
         else:
             print(f"Книга с id:{book_id} не найдена.\n")
